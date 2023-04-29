@@ -179,7 +179,7 @@ sample_sum = 0
 while(index < avg_size):
     sample_sum = sample_sum + buffer[index]
     index += 1
-
+    
 min_bpm = 30
 max_bpm = 200
 sample_peak = 0
@@ -209,10 +209,10 @@ while(index < len(buffer)):
                             interval = sample_index - previous_index
                             interval_ms = int(interval * 1000 / samplerate)
                             PPI_array.append(interval_ms)
-                            print("BPM: " + str((samplerate / interval) * 60))
+                            #print("BPM: " + str((samplerate / interval) * 60))
                         previous_peak = sample_peak
                         previous_index = sample_index
-                print("Sample " + str(sample_index) + " peak: " + str(sample_peak))
+                #print("Sample " + str(sample_index) + " peak: " + str(sample_peak))
         sample_peak = 0
 
     sample_sum = sample_sum + buffer[index] - buffer[index-avg_size]
