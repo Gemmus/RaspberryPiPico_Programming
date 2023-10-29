@@ -7,7 +7,6 @@
 
 # Part 2. Implement an algorithm that finds the heart rate from sampled PPG signal.
 
-
 from piotimer import Piotimer as Timer # hardware
 # from machine import Timer #software
 from ssd1306 import SSD1306_I2C
