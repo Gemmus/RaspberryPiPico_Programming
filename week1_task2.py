@@ -1,3 +1,7 @@
+# Write a code that shows the numbers from 0 to 7 in binary format using the three protoboard’s LEDs. 
+# LED1 is the least significant bit and LED3 is the most significant bit. Change the LED’s values every second.
+# At the same blink the Raspberry Pi Pico’s onboard LED every time when the protoboard’s LED values change.
+
 from machine import Pin
 import time
 
