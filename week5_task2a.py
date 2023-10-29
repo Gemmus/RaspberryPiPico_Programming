@@ -1,3 +1,9 @@
+# Write a code that calculates the basic HRV analysis parameters and shows the values on the OLED: 
+# ▪ Mean PPI
+# ▪ mean heart rate (HR)
+# ▪ Standard deviation of PPI (SDNN)
+# ▪ Root mean square of successive differences (RMSSD)
+
 import array
 import ssd1306
 from machine import Pin, I2C
