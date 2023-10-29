@@ -1,3 +1,21 @@
+# Write a program that reads the state of all four protoboard buttons and uses the state
+# to control protoboard’s LEDs. Use polling to read the protoboard buttons SW0 – SW2
+# state and use interrupt for the rotary encoder push button.
+
+# Program should work as follows:
+# SW0 – SW2 are used to toggle LEDs D1 – D3 on and off. Each button controls one LED. 
+# When a button is pressed the state of the controlled LED is toggled. 
+# Each press should be counted only once; pressing and holding the button may not cause the LED to blink. 
+# Rotary encoder’s button presses should be detected by using an interrupt. 
+# When the rotary encoder’s button is pressed all LEDs are switched off.
+# The state of the LEDs is displayed on the OLED screen. State of each LED is displayed on a separate line. 
+# Note that when a pin is configured as an output you can also read the state of the pin. 
+# OLED methods may not be called from an interrupt handler.
+
+# For example, if you press SW0 and then SW2 then LEDs D1 and D3 will turn on.
+# When you press rotary encoder button, they both switch off. 
+# When you press SW0 again D1 switches on and switches off on the following press.
+
 import ssd1306
 from machine import Pin, I2C
 from utime import sleep_ms
