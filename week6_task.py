@@ -1,3 +1,5 @@
+# The aim is to learn to use the Raspberry Pi Pico W to make HTTP requests to a server and handle the responses from those servers. 
+
 import network
 import socket
 from time import sleep
