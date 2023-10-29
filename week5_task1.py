@@ -1,3 +1,5 @@
+# Write code that connects your protoboard to ICT laboratory’s WiFi network and displays the IP address on the OLED.
+
 import network
 import socket
 import ssd1306
