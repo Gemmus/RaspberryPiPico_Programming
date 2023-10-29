@@ -1,3 +1,13 @@
+# This task is divided into two parts that can be completed separately and then integrated into a complete solution.
+
+# Part 1. Implement a program that uses Piotimer and ADC to sample PPG signal at
+# 250Hz frequency and passes the sampled data to the main program. In the first
+# phase main program can just print each sample so that you can, for example with the
+# data with Thonny’s plotter view.
+
+# Part 2. Implement an algorithm that finds the heart rate from sampled PPG signal.
+
+
 from piotimer import Piotimer as Timer # hardware
 # from machine import Timer #software
 from ssd1306 import SSD1306_I2C
