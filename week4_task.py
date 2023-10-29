@@ -1,3 +1,19 @@
+# Write a program that implements a menu system to control LED brightness. 
+# The menu has two modes: LED selection and brightness control. 
+# User toggles between the modes by pressing the encoder button.
+
+# When the program is in LED selection mode turning the encoder switches between LEDs. 
+# The selected LED is displayed on the screen.
+
+# When user presses the button program enters brightness control mode where turning the encoder adjusts the brightness of the selected LED.
+
+# The current brightness is displayed on the screen as both percentage (0 – 100%) and a horizontal bar.
+
+# Turning the knob immediately increases or decreases the brightness of the LED andupdates the display.
+
+# When user presses the button to switch back to LED selection mode the current brightness will remain on the LED. 
+# Adjusting one LEDs brightness may not affect the other LEDs.
+
 import ssd1306
 from machine import Pin, I2C, PWM, ADC
 import utime
