@@ -1,3 +1,5 @@
+#Write a code that turns the protoboard’s LEDs on and off in sequence. Switch the values every second.
+
 from machine import Pin
 import time
 
