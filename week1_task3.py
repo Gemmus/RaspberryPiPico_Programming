@@ -1,3 +1,5 @@
+# Write a similar code as in Task 2, but now turn the LEDs on and off smoothly. 
+
 from machine import Pin, PWM
 import time
 
